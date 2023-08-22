@@ -1,0 +1,64 @@
+.main_nav_container {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  padding-top: 2vw;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+
+  .nav_container {
+    display: grid;
+    grid-template-columns: 18vw auto;
+    padding: 20px 0;
+
+    .logo {
+      width: 6vw;
+
+      img {
+        // width: 18vw;
+        // max-width: 340px;
+        transition: 0.25s all linear;
+      }
+    }
+
+    .links_container {
+      align-self: center;
+
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .cancel_ticket_top_strip {
+          padding: 5px 14px;
+          height: 40px;
+          /* width: 136px; */
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 20px;
+          border-radius: 30px;
+          color: #000;
+
+          .cancel_ticket_top_strip_inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+              height: 20px;
+              width: auto;
+              margin-right: 10px;
+            }
+
+            span {
+              margin-top: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

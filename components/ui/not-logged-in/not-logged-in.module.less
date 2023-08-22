@@ -1,0 +1,48 @@
+.not_logged_in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    .inner {
+        .title1, .title2{
+            margin-bottom: 20px;
+        }
+        .title1{
+            text-align: center;
+        }
+        img {
+            width: 160px;
+            height: 160px;
+            margin-left: 54px;
+        }
+    }
+    .login_btn{
+        color: var(--secondary-color);
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        width: 100px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        margin: 0 auto; 
+        &:hover{
+            cursor: pointer;
+            color: var(--primary-color);
+        } 
+    }
+}
+
+@media only screen and (max-width:600px) {
+        .not_logged_in {
+            .inner {
+                img {
+                    width: 160px;
+                    height: 160px;
+                    margin-left: 50px;
+                }
+            }
+        }
+    
+    
+}

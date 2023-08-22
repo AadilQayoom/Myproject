@@ -1,0 +1,34 @@
+.explore_wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 30px;
+
+    .explore {
+        background-color: rgb(231, 194, 124);
+        padding: 50px;
+
+        .title {
+            margin-bottom: 20px;
+        }
+
+        .desc {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .explore_wrapper {
+        grid-template-columns: 1fr 1fr;
+        .explore {
+            padding: 30px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .explore_wrapper {
+        display: block;
+    }
+}

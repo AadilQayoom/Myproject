@@ -1,0 +1,84 @@
+.kupos_success_failure {
+  min-height: 50vh;
+
+  .cancel_done_section {
+    margin-top: 40px;
+  }
+
+  .cancel_done_section img {
+    height: 90px;
+    width: auto;
+  }
+
+  .cancel_ticket_done {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  .cancel_ticket_done:nth-child(3),
+  .cancel_ticket_done:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .cancel_done_section .cancel_success_info_div {
+    background: var(--secondary-color);
+    border-radius: 10px;
+    color: var(--white-color);
+    margin: 12px auto;
+    margin-top: 20px;
+    padding: 6px 25px;
+    border-radius: 5px;
+    width: auto;
+    position: relative;
+  }
+
+  .primary_triangle {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 19px solid var(--secondary-color);
+    top: -15px;
+    left: 20%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .bank_deposit_cards {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-gap: 25px;
+    margin-top: 30px;
+  }
+
+  .successful_purchase_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .successful_purchase_buttons>button {
+    margin: 0 10px;
+    // margin-top: 70px;
+    height: 40px;
+    width: 250px;
+  }
+
+  .success_failure_content {
+    margin-top: 45px;
+    // position: absolute;
+    z-index: 100;
+    // width: 100% !important;
+    flex: 1;
+  }
+
+  .success_info_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}

@@ -1,0 +1,103 @@
+.common-payment-options {
+  .payment-methods {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+
+  .payment-methods div input {
+    margin-right: 10px;
+  }
+
+  .payment-block-heading {
+    // margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+
+  
+
+  .payment-methods img {
+    height: auto;
+    width: 110px;
+    display: inline-flex;
+    margin-right: 10px;
+    align-items: center;
+  }
+  .payment-methods > div {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 30px;
+    position: relative;
+  }
+
+  .payment-methods .kupos-pay-method {
+    flex: 4;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+  }
+
+  .payment-checkbox {
+    position: absolute;
+    z-index: 999;
+    width: 50px;
+    height: 100%;
+    left: 0;
+  }
+
+  .payment-methods > div.kupos-pay {
+    flex: 2;
+    color: var(--primary-color);
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-right: 0px;
+    display: block;
+    .kupos-pay-check {
+      margin-bottom: 3px;
+      margin-top: 11pt;
+      /* position: relative; */
+    }
+    span.kupos-amount {
+      margin-left: 28px;
+    }
+  }
+  .accept-tnc {
+    margin-top: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+    // align-items: center;
+  }
+  .accept-tnc a {
+    margin-top: 4px;
+  }
+  .accept-tnc a:hover {
+    color: #888;
+  }
+  .tnc-error {
+    margin-top: 10px;
+  }
+  .pay-now-section {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0 !important;
+  }
+  .pay-now-button {
+    width: 180px;
+    line-height: 1.5;
+    height: 40px;
+  }
+  .booking-error {
+    padding: 10px;
+  }
+}
+
+@import './promocode-block.module.less';

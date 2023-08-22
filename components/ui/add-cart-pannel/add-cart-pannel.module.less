@@ -1,0 +1,141 @@
+.pannel_wrapper {
+
+    .new_tag {
+        color: #CA5008;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .title_desc {
+        margin-bottom: 20px;
+
+        .title {
+            margin-bottom: 10px;
+        }
+
+        .desc {}
+    }
+
+    .item_price_outer {
+        margin-bottom: 20px;
+    }
+
+    .in_stock {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+
+        .stock_inner {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+
+            .stock_no {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--primary-color);
+                padding: 6px 20px;
+                color: #fff;
+                border-radius: 8px;
+                // margin-right: 6px;
+            }
+        }
+
+        .delivery {
+            span {
+                text-decoration: underline;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .see_details {
+        margin-bottom: 20px;
+
+        .detail {
+            text-decoration: underline;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    .multi_selection {
+        margin-bottom: 20px;
+
+        .count_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+
+            .changables {
+                display: grid;
+                grid-template-columns: 50px auto 50px;
+                gap: 10px;
+
+                .button {
+                    border: 1px solid #cccc;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    user-select: none;
+                    height: 54px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+
+        }
+
+        .price_details {
+            .ask_quantity {
+                span {
+                    text-decoration: underline;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .documentation {
+
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        span {
+            text-decoration: underline;
+
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .add_to_bag {
+        margin-bottom: 20px;
+    }
+
+}

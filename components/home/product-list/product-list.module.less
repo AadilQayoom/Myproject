@@ -1,0 +1,33 @@
+.products_parent_container {
+
+    margin: 70px 0px;
+
+    .section_title {
+        margin-bottom: 20px;
+    }
+
+    .category_list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width:1000px){
+    .products_parent_container {
+    
+        .category_list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+@media only screen and (max-width:600px){
+    .products_parent_container {
+    
+        .category_list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.side_overlay {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    // overflow: scroll;
+
+    .visible_part {
+        background-color: white;
+        padding: 50px;
+        position: relative;
+        overflow: scroll;
+
+        .label_close_button {
+            padding-bottom: 30px;
+            position: relative;
+
+            .title {
+                display: flex;
+                justify-content: center;
+            }
+
+            .close_button {
+                position: absolute;
+                right: 10px;
+                top: -10px;
+                padding: 6px 8px;
+                border-radius: 50%;
+
+                img {
+                    width: 14px;
+                    height: 14px;
+                }
+
+                &:hover {
+                    background-color: #ddd;
+
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1000px){
+    .side_overlay {
+        grid-template-columns: 4fr 3fr;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .side_overlay {
+        grid-template-columns: 1fr 2fr;
+    }
+}

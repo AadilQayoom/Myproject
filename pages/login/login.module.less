@@ -1,0 +1,152 @@
+.main_wrapper {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    max-height: 100vh;
+    overflow: hidden;
+
+    .login_side {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        margin-bottom: 100px;
+        max-width: 70%;
+
+        .login_heading {
+            text-align: center;
+            font-size: 38px;
+            font-weight: 600;
+            color:#F96400;
+            padding-bottom: 88px;
+        }
+
+        .stay_signed {
+            font-size: 14px;
+            margin-top: 6px;
+        }
+
+        .option_links {
+            margin-bottom: 20px;
+            margin-top: 6px;
+            text-decoration: underline;
+
+            &:hover {
+                cursor: pointer;
+                color: black;
+            }
+        }
+
+        .register_btn_wrapper {
+            margin-top: 20px;
+
+            .register_btn {
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .button_container {
+            margin-top: 30px;
+        }
+    }
+
+    .left_side_and_arrow {
+        background-color: #F96400;
+        padding: 50px;
+
+        .arrow {
+            margin-bottom: 10px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .left_side {
+            color: white;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+
+            .policy {
+                padding-top: 20%;
+            }
+
+            .logo {
+                width: 100px;
+                height: 50px;
+                padding-bottom: 50%;
+            }
+
+            .title {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .forgot_wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 50px;
+
+        .forgot_password {
+            width: 460px;
+            margin-top: 100px;
+            .forgetpassword_heading{
+                
+                    text-align: center;
+                    font-size: 22.5pt !important;
+                    font-weight: 600;
+                    
+                    color: #F96400;
+                    padding-bottom: 100px;
+            }
+
+            .go_back {
+                width: 40px;
+                height: 40px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .main_wrapper {
+        grid-template-columns: 1fr 2fr;
+        overflow: scroll;
+
+        .left_side_and_arrow {
+            .left_side {
+                color: white;
+                display: block;
+            }
+        }
+
+        .forgot_password {
+            margin: auto;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .main_wrapper {
+        display: block;
+
+        .login_side {
+            margin: auto;
+        }
+    }
+
+}

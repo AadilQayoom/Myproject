@@ -1,0 +1,48 @@
+.category_item_wraper {
+    height: 750px;
+    margin: 0px 2px;
+
+    .upper {
+        height: 450px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .lower {
+        height: 300px;
+        background-color: red;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 20px;
+        color: white;
+        display: grid;
+        grid-template-rows: 4fr 1fr;
+
+        .action_button {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: black;
+
+            &:hover {
+                background-color: white;
+                cursor: pointer;
+            }
+        }
+
+        // .action_button:hover {
+        //     background-color: white;
+        //     cursor: pointer;
+        // }
+
+        .lower_content {
+            .title {
+                margin-bottom: 20px;
+                font-weight: bold;
+                font-size: 24px;
+            }
+        }
+    }
+}

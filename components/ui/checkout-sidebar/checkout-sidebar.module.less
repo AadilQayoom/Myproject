@@ -1,0 +1,68 @@
+.checkout_container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 70px;
+    position: sticky;
+    top: 120px;
+    height: fit-content;
+
+    .sidebar_item {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+
+
+        &.total {
+            margin-bottom: 30px;
+        }
+
+    }
+
+
+    hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .checkout_btn {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 12px;
+        margin: 20px 0px 20px 0px;
+
+
+        .voucher {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            .voucher_button {
+                width: 120px;
+
+            }
+        }
+
+        .voucher_btn {
+            border: none;
+            color: blue;
+            background-color: white;
+            font-weight: bold;
+        }
+
+        .voucher_btn:hover {
+            cursor: pointer;
+        }
+    }
+
+
+    .info_section {
+        margin-top: 20px;
+
+        .info_item {
+            line-height: 1;
+            margin: 10px 0px 0px 0px;
+        }
+    }
+
+}

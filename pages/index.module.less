@@ -1,0 +1,104 @@
+.container {
+    position: relative;
+
+    .events_heading {
+        color: #F96400;
+        text-align: center;
+        padding: 20px 0px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .gallery_heading {
+        padding-bottom: 25px;
+        border-bottom: 1px solid #ccc;
+        font-size: 18px;
+        font-weight: 600;
+        color: #F96400;
+    }
+
+    .events_gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+
+    .viewall_button {
+        display: flex;
+        justify-content: flex-end;
+        padding: 16px 0px;
+        font-size: 16px;
+
+
+        span {
+            color: #F96400;
+
+            &:hover {
+                cursor: pointer;
+                color: rgb(39, 103, 230);
+                text-decoration: underline;
+            }
+        }
+
+
+    }
+
+
+    .events_created {
+        padding: 24px 0px;
+        border-top: 1px solid #ccc;
+        color: #F96400;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .type_events {
+        padding: 20px 0px;
+        border-bottom: 1px solid #ccc;
+        color: #c2bdbd;
+        font-size: 16px;
+
+        .event_item {
+            margin-right: 22px;
+            padding: 6px;
+            border-bottom: 0px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .event_active {
+            background-color: #F96400;
+            color: white;
+        }
+    }
+
+    .events_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding: 30px 6px;
+        position: relative;
+
+    }
+
+    .viewall_events_button {
+        margin-bottom: 50px;
+        font-size: 16px;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        span {
+            color: #F96400;
+
+            &:hover {
+                cursor: pointer;
+                color: rgb(39, 103, 230);
+                text-decoration: underline;
+            }
+        }
+
+    }
+}

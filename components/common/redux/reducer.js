@@ -1,0 +1,58 @@
+// This is the root reducer of the feature. It is used for:
+//   1. Load reducers from each action in the feature and process them one by one.
+//      Note that this part of code is mainly maintained by Rekit, you usually don't need to edit them.
+//   2. Write cross-topic reducers. If a reducer is not bound to some specific action.
+//      Then it could be written here.
+// Learn more from the introduction of this approach:
+// https://medium.com/@nate_wang/a-new-approach-for-managing-redux-actions-91c26ce8b5da.
+
+import initialState from './initialState';
+import { reducer as loadTicketDetailsReducer } from './loadTicketDetails';
+import { reducer as setTicketDetailsReducer } from './setTicketDetails';
+import { reducer as loginReducer } from './login';
+import { reducer as signupReducer } from './signup';
+import { reducer as setLoginDataReducer } from './setLoginData';
+import { reducer as updateProfileReducer } from './updateProfile';
+import { reducer as setStepMenuStepReducer } from './setStepMenuStep';
+import { reducer as resetPasswordReducer } from './resetPassword';
+import { reducer as openCloseLoginModalReducer } from './openCloseLoginModal';
+import { reducer as openCloseCancellationModalReducer } from './openCloseCancellationModal';
+import { reducer as getPlacesReducer } from './getPlaces';
+import { reducer as generateOtpReducer } from './generateOtp';
+import { reducer as validateOtpReducer } from './validateOtp';
+import { reducer as loadKuposTicketDetailsReducer } from './loadKuposTicketDetails';
+import { reducer as googleLogoutReducer } from './googleLogout';
+import { reducer as subscribeReducer } from './subscribe';
+import { reducer as getPassengerInfoReducer } from './getPassengerInfo';
+
+const reducers = [
+  loadTicketDetailsReducer,
+  setTicketDetailsReducer,
+  loginReducer,
+  signupReducer,
+  setLoginDataReducer,
+  updateProfileReducer,
+  setStepMenuStepReducer,
+  resetPasswordReducer,
+  openCloseLoginModalReducer,
+  getPlacesReducer,
+  generateOtpReducer,
+  validateOtpReducer,
+  loadKuposTicketDetailsReducer,
+  googleLogoutReducer,
+  subscribeReducer,
+  getPassengerInfoReducer,
+  openCloseCancellationModalReducer,
+];
+
+export default function reducer(state = initialState, action) {
+  let newState;
+  switch (action.type) {
+    // Handle cross-topic actions here
+    default:
+      newState = state;
+      break;
+  }
+  /* istanbul ignore next */
+  return reducers.reduce((s, r) => r(s, action), newState);
+}

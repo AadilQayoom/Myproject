@@ -1,0 +1,9 @@
+export const CATEGORIES = "categories";
+export const LATEST_PRODUCTS = "products/latest";
+export const CATEGORY_PRODUCTS = "categories/products/";
+export const BRANDS = "brands";
+export const BANNERS = "banners";
+export const EVENTS = "v1/events"
+export const SINGLE_EVENT = "v1/event"
+export const JOIN_EVENT = "v1/add-event"
+export const PROFILE = "v1/profile"
